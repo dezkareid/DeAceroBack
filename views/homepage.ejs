@@ -1,74 +1,163 @@
-<!-- Default home page -->
-<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600' rel='stylesheet' type='text/css'>
-<style>
-    /* Styles included inline since you'll probably be deleting this page anyway */
-    html,body{text-align:left;font-size:1em}html,body,img,form,textarea,input,fieldset,div,p,div,ul,li,ol,dl,dt,dd,h1,h2,h3,h4,h5,h6,pre,code{margin:0;padding:0}ul,li{list-style:none}img{display:block}a img{border:0}a{text-decoration:none;font-weight:normal;font-family:inherit}*:active,*:focus{outline:0;-moz-outline-style:none}h1,h2,h3,h4,h5,h6{font-weight:normal}div.clear{clear:both}.clearfix:after{clear:both;content:".";display:block;font-size:0;height:0;line-height:0;visibility:hidden}body{font-family:"Open Sans",Arial,sans-serif;font-weight:300;}.top-bar {width: 100%; background-color: #e4f0f1; padding: 15px 0;}.top-bar .container img {float: left;}.top-bar .container ul {float: right; padding-top: 25px;}.top-bar .container li {float: left; width: 125px; text-align: center; font-size: 15px; color:#000; font-weight: 600;}.top-bar .container a li:hover {color: #118798; -webkit-transition:color 200ms; -moz-transition:color 200ms; -o-transition:color 200ms;transition:color 200ms;}.container{width: 80%; max-width: 1200px; margin: auto;}div.header {-webkit-transition: 6s; -moz-transition: 6s; -o-transition: 6s;transition: 6s; background: rgba(4, 36, 41, 0.89) url(http://sailsjs.org/images/img_sailsShadow.png) no-repeat 42% bottom; padding: 100px 0 65px;}.header h1#main-title{color: #fff; font-weight: 300; font-size: 2.5em;}.header h3{color: #b1eef7; font-style: italic; font-weight: 300;}.header h3 code{font-style: normal!important; background-color: rgba(255,255,255,0.5); font-weight: 300; color:#0e6471; margin: 0px 5px;}div.main.container{padding: 50px 0;}h1 {color: #118798; font-weight: 300;}code {font-size: inherit; font-family: 'Consolas', 'Monaco', monospace; padding:4px 5px 1px; background-color: #f3f5f7}a{color: #118798; font-weight: 300; text-decoration: underline;}a:hover {color: #0e6471; -webkit-transition:color 200ms; -moz-transition:color 200ms; -o-transition:color 200ms;transition:color 200ms;}p{line-height: 1.5em;}blockquote{background-color: #e4f0f1; padding: 25px; line-height: 1.5em; margin: 15px 0;}blockquote span{font-weight: 600; padding-right: 5px;}ul.getting-started{padding: 25px 75px 25px 0; width: 70%; float: left; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}ul.getting-started li{padding: 25px 0;}ul.getting-started li h3 {padding-bottom: 10px; font-size: 25px; font-weight: 300;}.sprite{background:url(http://sailsjs.org/images/newapp.sprite.png) no-repeat; position: absolute; left: 0; top:0;}.getting-started .sprite{margin-left:10px;padding-left:60px;height:42px;width:0; float: left;}.getting-started .one{background-position:0 0}.getting-started .two{background-position:0 -42px}.getting-started .three{background-position:0 -83px}div.step {position: relative; padding-left: 70px; opacity: 0.9;}div.step:hover{ opacity: 1;}div.links {float: left; width: 30%; max-width: 325px; -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; background-color: #f3f5f7; border: 1px solid #ebebeb; padding: 25px 45px 35px;}div.links h3 {color: #727272; text-align: center; font-size: 28px; font-weight: 300;}div.links h4 {color: #727272; font-size: 17px; font-weight: 600; padding: 15px 0 10px;}div.links .link-list a {text-decoration: none; font-weight: 400;}div.links .link-list a li {padding: 0px 0px 5px 10px;}div.default-page{min-width: 1200px;}.pocket{display:none;}
-</style>
-<script type="text/javascript">
-setTimeout(function sunrise () {
-    document.getElementsByClassName('header')[0].style.backgroundColor = '#118798';
-}, 0);
-</script>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8"> 
+        <meta charset="utf-8">
+        <title>DeAcero | Sistema de rastreo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 
-<div class="default-page">
-    <div class="header">
-        <h1 id="main-title" class="container"><%= __('A brand new app.') %></h1>
-        <h3 class="container">You're looking at: <code><%= view.pathFromApp + '.' +view.ext %></code></h3>
-    </div>
-    <div class="main container clearfix">
-        <!-- <h1>Getting started</h1>
-        <p>Don't worry, we've got your back.</p> -->
-        <ul class="getting-started">
-            <li class="clearfix">
-                <div class="step">
-                    <div class="sprite one"></div>
-                    <h3>Generate a REST API.</h3>
-                    <p>
-                        Run <code>sails generate api user</code>.  This will create two files: a <a href="http://sailsjs.org/#!/documentation/concepts/ORM/Models.html">model</a> <code class="pocket">api/models/User.js</code> and a <a href="http://sailsjs.org/#!/documentation/concepts/Controllers">controller</a><code class="pocket">api/controllers/UserController.js</code>.
-                    </p>
-                </div>
-            </li>
-            <li class="clearfix">
-                <div class="step">
-                    <div class="sprite two"></div>
-                    <h3>
-                        Lift your app.
-                    </h3>
-                    <p>
-                        Run <code>sails lift</code> to start up your app server.  If you visit <a target="_blank" href="http://localhost:1337/user"><code>http://localhost:1337/user</code></a> in your browser, you'll see a <a href="http://sailsjs.org/#!/documentation/reference/blueprint-api">WebSocket-compatible</a> user API.
-                    </p>
-                </div>
-            </li>
-            <li class="clearfix">
-                <div class="step">
-                    <div class="sprite three"></div>
-                    <h3>
-                        Dive in.
-                    </h3>
-                    <p>Blueprints are just the beginning.  You'll probably also want to learn how to customize your app's <a href="http://sailsjs.org/#!/documentation/concepts/Routes">routes</a>, set up <a href="http://sailsjs.org/#!/documentation/concepts/Policies">security policies</a>, configure your <a href="http://sailsjs.org/#!/documentation/reference/sails.config/sails.config.connections.html">data sources</a>, and build custom <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/Controllers?q=actions">controller actions</a>. For more help getting started, check out the links on this page.</p>
+        <!--[if lt IE 9]>
+          <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-                </div>
-            </li>
-        </ul>
-        <div class="links">
-            <!-- <h3>Links</h3> -->
-            <ul class="link-list">
+        <!-- CSS code from Bootply.com editor -->
+        
+        <link href="styles/main.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    </head>
+<body>
+        
+<!-- begin template -->
 
-                <h4>Docs</h4>
-                <a target="_blank" href="http://sailsjs.org/#!/documentation/anatomy/myApp"><li>App Structure</li></a>
-                <a target="_blank" href="http://sailsjs.org/#!/documentation/reference"><li>Reference</li></a>
-                <a target="_blank" href="http://sailsjs.org/#!/documentation/concepts/extending-sails/Adapters/adapterList.html"><li>Supported Databases</li></a>
+<div class="navbar navbar-custom navbar-fixed-top">
+  <div class="navbar-header"><a class="navbar-brand" href="#"><img alt="Mapper" src="img/navbarlogo.png"></a>
+    <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </a>
+  </div>
+  <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav">
 
-                <h4>Tutorials</h4>
-                <a target="_blank" href="https://github.com/sails101"><li>Sails 101</li></a>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <form class="navbar-form navbar-left" role="search" method="get" id="predioForm">
+        
+        <div class="form-group">
+          <input id="clave" type="text" class="form-control navbar__input active" placeholder="10 digitos de catastro" name='clave_lote'>
+          <button type="submit" class="navbar__search" id="navbar-search-icon"><i class="fa fa-search navbar__search-icon" ></i></button>
 
-                <h4>Community</h4>
-                <a target="_blank" href="http://stackoverflow.com/search?q=sails.js"><li>StackOverFlow</li></a>
-                <a target="_blank" href="https://github.com/balderdashy/sails"><li>GitHub</li></a>
-                <a target="_blank" href="https://groups.google.com/forum/#!forum/sailsjs"><li>Google Group</li></a>
-                <a target="_blank" href="http://webchat.freenode.net/"><li>IRC (#sailsjs on freenode)</li></a>
-
-            </ul>
         </div>
-    </div>
+      </form>
+      <li><a href="#">Iniciar sesión</a></li>
+      <li><a href="#">Registrarse</a></li>
+      <li>&nbsp;</li>
+    </ul>
+  </div>
 </div>
+<div class="container-fluid" id="main">
+  <div class="row">
+    <div class="col-xs-4" id="left">
+    
+      <ul class="nav nav-tabs nav-justified">
+        <li class="nav-tabs__item active"><a data-toggle="tab" href="#Oportunidades" class="nav-tabs__link">Oportunidades de Inversión</a></li>
+        <li class="nav-tabs__item"><a data-toggle="tab" href="#Oferta" class="nav-tabs__link">Oferta de Inversión</a></li>
+        <li class="nav-tabs__item"><a data-toggle="tab" href="#Normativa" class="nav-tabs__link">Normativa</a></li>
+      </ul>
+
+      <div class="tab-content__container">
+        <div class="tab-content">
+          <div id="Oportunidades" class="tab-pane fade in active" style="padding-top:10px;">
+  <!--         <hr>
+            <div class="text-center">
+            Filtrar por precio: 
+            <b>$ 10 </b>
+              <input id="ex2" type="text" class="span2" value="" data-slider-min="10" data-slider-max="1000" data-slider-step="5" data-slider-value="[250,450]"/>
+            <b>$ 1000</b>
+            </div> -->
+          <hr>
+            <div id="proyectos">
+            <!-- Proyectos will be loaded here -->
+            </div>
+          </div>
+          <div id="Oferta" class="tab-pane fade" style="padding-top:10px;">
+            <div class="alert alert-warning">
+              Por el momento no hay ofertas de inversión disponible
+            </div>
+          </div>
+          <div id="Normativa" class="tab-pane fade" style="padding-top:10px;">
+            <div class="alert alert-info">
+              Da click en algún predio para cargar su normativa
+            </div>
+              <table class="table table-striped table-condensed">
+              <thead>
+                <tr><th>Clave catastral:</th><th id="clave_lote"></th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Zonificación secundaria:</td><td id="zonifica"></td></tr>
+                <tr><td>Coeficiente de Uso de Suelo (CUS):</td><td id="cus"></td></tr>
+                <tr><td>Coeficiente de Ocupación de Suelo (COS):</td><td id="cos"></td></tr>
+                <tr><td>Coeficiente de Area Verde (CAV):</td><td id="cav"></td></tr>
+                <tr><td>Densidad (Hab/Ha):</td><td id="densidades"></td></tr>
+                <tr><td>Niveles permitidos:</td><td id="niv_max"></td></tr>
+                <tr><td>Área:</td><td id="area"></td></tr>
+                <tr><td>viv_ha:</td><td id="viv_ha"></td></tr>
+              </tbody>
+            </table>
+            <hr>
+          </div>
+        </div>
+        
+        <!-- item list -->
+        <div class="panel panel-default">
+          <div class="panel-heading"><i class="fa fa-wrench"></i> Opciones del mapa</div>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="ProyectosActivos" name="ProyectosActivos" type="checkbox" onClick="toggleLayer(terrenosLayer);" checked>
+            Desplegar proyectos activos en el mapa
+          </label>
+          </div>
+        <div class="checkbox">
+          <label>
+            <input id="Colonias" name="Colonias" type="checkbox" onClick="toggleLayer(coloniasLayer);" checked>
+            Desplegar colonias en el mapa
+          </label>
+        </div>
+        <div class="checkbox">
+          <label>
+            <input id="Predios" name="Predios" type="checkbox" onClick="toggleLayer(prediosLayer);" checked>
+            Desplegar los predios en el mapa
+          </label>
+        </div>
+      <hr>
+      <!-- /item list -->        
+      <p>
+      <a href="#" target="_ext" class="center-block btn btn-primary">¡Tengo un pregunta!</a>
+      </p>
+        
+      <hr>      
+        <span class="copyright">Derechos reservados &copy; Mapper </span>
+      <hr> 
+      
+    </div>
+  </div>
+    <div class="col-xs-8" id="right">
+      <div id="map"></div>
+      <!-- Labels on hover -->
+      <div id = "mouseLabel"></div>
+      <div id="legend">My first legend!</div>
+    </div>
+    
+  </div>
+</div>
+<!-- end template -->
+
+        <script type='text/javascript' src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+
+        <script type='text/javascript' src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+        <!--<script type='text/javascript' src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/5.3.0/bootstrap-slider.min.js
+"></script>-->
+
+        <!-- Mapper -->
+        <script src="js/map.io.js"></script>
+        <script>var inversionIcon = "img/inversion.png"</script>
+
+    <!-- Google Maps API -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi9Im1JXY7XONcKsz7mmMqnj5VXGntkhg&callback=initMap"></script>
+        
+    </body>
+</html>
