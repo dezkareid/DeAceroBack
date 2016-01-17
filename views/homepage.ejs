@@ -21,7 +21,7 @@
 <!-- begin template -->
 
 <div class="navbar navbar-custom navbar-fixed-top">
-  <div class="navbar-header"><a class="navbar-brand" href="#"><img alt="DeAcero"  height="30px" src="images/DeaLogo.png"></a>
+  <div class="navbar-header"><a class="navbar-brand" href="#"><img alt="DeAcero"  height="30px" src="images/DeaLogo.png"> PROACT</a>
     <a class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
@@ -36,9 +36,12 @@
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-bell navbar__search-icon" ></i><span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">Opciones</a></li>
-            <li role="separator" class="divider"></li>
-            <li><a href="#">Salir</a></li>
+            <li><a href="#"><i class="fa fa-sign-in"></i>  No. 539910 Registro una <strong>Llegada</strong></a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>  No. 539910 Registro una <strong>Salida</strong></a></li>
+            <li><a href="#"><i class="fa fa-sign-in"></i>  No. 539911 Registro una <strong>Llegada</strong></a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>  No. 539911 Registro una <strong>Salida</strong></a></li>
+            <li><a href="#"><i class="fa fa-sign-in"></i>  No. 539912 Registro una <strong>Llegada</strong></a></li>
+            <li><a href="#"><i class="fa fa-sign-out"></i>  No. 539912 Registro una <strong>Salida</strong></a></li>
           </ul>
         </li>
         <li class="dropdown">
@@ -54,14 +57,14 @@
 </div>
 <div class="container-fluid" id="main">
   <div class="row">
-    <div class="col-xs-4" id="left">
+    <div class="col-xs-3" id="left">
     
         <ul class="nav nav-tabs nav-justified">
             <li class="nav-tabs__item active"><a data-toggle="tab" href="#Oportunidades" class="nav-tabs__link">Pedidos</a></li>
         </ul>
         <div class="input-group">
           <span class="input-group-addon" id="basic-addon1"><i class="fa fa-search"></i></span>
-          <input type="text" class="form-control" placeholder="Buscar orden" aria-describedby="basic-addon1">
+          <input type="text" class="form-control" placeholder="Buscar orden de compra" aria-describedby="basic-addon1">
         </div>
         &nbsp;
         
@@ -76,31 +79,24 @@
                 </div>
                 <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                   <div class="panel-body">
-                    <ul>
-                        <li><strong>Estatus: <font color="#1CBD65">En tiempo</font></strong></li>
-                        <li>
-                            <strong>Ubicación:</strong> 
-                            Sucursal norte, GDL, JAL.
-                        </li>
-                        <li>
-                            <strong>ETA: </strong> 28 Enero 2016
-                        </li>
-
-                    </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default">
-                <div class="panel-heading" role="tab" id="headingTwo">
-                  <h4 class="panel-title">
-                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                      Orden No: 539911
-                    </a>
-                  </h4>
-                </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-                  <div class="panel-body" align="center">
-                  <table width="75%">
+                    <h4>Datos Cliente:</h4>
+                    <table width="100%">
+                        <tr>
+                            <td><strong>ID:</strong></td>
+                            <td align="right">5878</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nombre:</strong></td>
+                            <td align="right">Ferreterias Javi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tel: </strong></td>
+                            <td align="right"><a href="#">818-88-91-90</a></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h4>Datos del pedido:</h4>
+                    <table width="100%">
                       <tr>
                           <td><strong>Estatus:</strong></td>
                           <td align="right"><strong><font color="#1CBD65">En tiempo</font></strong></td>
@@ -124,7 +120,7 @@
                   </table>
                   <br>
                   <strong> Historial: </strong>
-                  <table border="1" width="75%">
+                  <table border="1" width="100%">
                       <tr>
                           <td style="padding: 5px;"><strong>15-01-2016</strong></td>
                           <td style="padding: 5px;">Proceso del pedido</td>
@@ -142,6 +138,118 @@
                           <td style="padding: 5px;">Escala San Luis Potosí</td>
                       </tr>
                   </table>
+                  <br>
+                  <h4>Datos Flete:</h4>
+                  <table width="100%">
+                      <tr>
+                          <td><strong>Empresa Fletera:</strong></td>
+                          <td align="right">Transportes del Norte</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Nombre del chofer:</strong></td>
+                          <td align="right">Juan Peréz</td>
+                      </tr>
+                      <tr>
+                          <td><strong>No. de Unidad</strong></td>
+                          <td align="right">7845</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Tel. Contacto:</strong></td>
+                          <td align="right">818-12-12-12</td>
+                      </tr>
+                  </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingTwo">
+                  <h4 class="panel-title">
+                    <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                      Orden No: 539911
+                    </a>
+                  </h4>
+                </div>
+                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                  <div class="panel-body" align="center">
+                  <h4>Datos Cliente:</h4>
+                    <table width="100%">
+                        <tr>
+                            <td><strong>ID:</strong></td>
+                            <td align="right">5878</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nombre:</strong></td>
+                            <td align="right">Ferreterias Javi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tel: </strong></td>
+                            <td align="right"><a href="#">818-88-91-90</a></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h4>Datos del pedido:</h4>
+                    <table width="100%">
+                      <tr>
+                          <td><strong>Estatus:</strong></td>
+                          <td align="right"><strong><font color="#D4120F">Retrasado</font></strong></td>
+                      </tr>
+                      <tr>
+                          <td><strong>Ubicación:</strong></td>
+                          <td align="right"> Sucursal Norte, GDL, Jal.</td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td><strong>ETA:</strong></td>
+                          <td align="right"> 28 Enero 2016</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Origen:</strong></td>
+                          <td align="right">Sucursal San Nicolas, SN, NL.</td>
+                      </tr>
+                  </table>
+                  <br>
+                  <strong> Historial: </strong>
+                  <table border="1" width="100%">
+                      <tr>
+                          <td style="padding: 5px;"><strong>15-01-2016</strong></td>
+                          <td style="padding: 5px;">Proceso del pedido</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>15-01-2016</strong></td>
+                          <td style="padding: 5px;">Salio de bodega a destino</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>18-01-2016</strong></td>
+                          <td style="padding: 5px;">Escala Coahuila</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>20-01-2016</strong></td>
+                          <td style="padding: 5px;">Escala San Luis Potosí</td>
+                      </tr>
+                  </table>
+                  <br>
+                  <h4>Datos Flete:</h4>
+                  <table width="100%">
+                      <tr>
+                          <td><strong>Empresa Fletera:</strong></td>
+                          <td align="right">Transportes del Norte</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Nombre del chofer:</strong></td>
+                          <td align="right">Juan Peréz</td>
+                      </tr>
+                      <tr>
+                          <td><strong>No. de Unidad</strong></td>
+                          <td align="right">7845</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Tel. Contacto:</strong></td>
+                          <td align="right">818-12-12-12</td>
+                      </tr>
+                  </table>
                   </div>
                 </div>
               </div>
@@ -155,14 +263,92 @@
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
                   <div class="panel-body">
-                    
+                     <h4>Datos Cliente:</h4>
+                    <table width="100%">
+                        <tr>
+                            <td><strong>ID:</strong></td>
+                            <td align="right">5878</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Nombre:</strong></td>
+                            <td align="right">Ferreterias Javi</td>
+                        </tr>
+                        <tr>
+                            <td><strong>Tel: </strong></td>
+                            <td align="right"><a href="#">818-88-91-90</a></td>
+                        </tr>
+                    </table>
+                    <br>
+                    <h4>Datos del pedido:</h4>
+                    <table width="100%">
+                      <tr>
+                          <td><strong>Estatus:</strong></td>
+                          <td align="right"><strong><font color="#1CBD65">En tiempo</font></strong></td>
+                      </tr>
+                      <tr>
+                          <td><strong>Ubicación:</strong></td>
+                          <td align="right"> Sucursal Norte, GDL, Jal.</td>
+                      </tr>
+                      <tr>
+                          <td></td>
+                          <td></td>
+                      </tr>
+                      <tr>
+                          <td><strong>ETA:</strong></td>
+                          <td align="right"> 28 Enero 2016</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Origen:</strong></td>
+                          <td align="right">Sucursal San Nicolas, SN, NL.</td>
+                      </tr>
+                  </table>
+                  <br>
+                  <strong> Historial: </strong>
+                  <table border="1" width="100%">
+                      <tr>
+                          <td style="padding: 5px;"><strong>15-01-2016</strong></td>
+                          <td style="padding: 5px;">Proceso del pedido</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>15-01-2016</strong></td>
+                          <td style="padding: 5px;">Salio de bodega a destino</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>18-01-2016</strong></td>
+                          <td style="padding: 5px;">Escala Coahuila</td>
+                      </tr>
+                      <tr>
+                          <td style="padding: 5px;"><strong>20-01-2016</strong></td>
+                          <td style="padding: 5px;">Escala San Luis Potosí</td>
+                      </tr>
+                  </table>
+                  <br>
+                  <h4>Datos Flete:</h4>
+                  <table width="100%">
+                      <tr>
+                          <td><strong>Empresa Fletera:</strong></td>
+                          <td align="right">Transportes del Norte</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Nombre del chofer:</strong></td>
+                          <td align="right">Juan Peréz</td>
+                      </tr>
+                      <tr>
+                          <td><strong>No. de Unidad</strong></td>
+                          <td align="right">7845</td>
+                      </tr>
+                      <tr>
+                          <td><strong>Tel. Contacto:</strong></td>
+                          <td align="right">818-12-12-12</td>
+                      </tr>
+                  </table>
                   </div>
                 </div>
               </div>
             </div>
         
     </div>
-    <div class="col-xs-8" id="right">
+    <div class="col-xs-9" id="right">
       <div id="map"></div>
       <!-- Labels on hover -->
       <div id = "mouseLabel"></div>
@@ -187,5 +373,11 @@
     <!-- Google Maps API -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBi9Im1JXY7XONcKsz7mmMqnj5VXGntkhg&callback=initMap"></script>
         
+    <script type="text/javascript">
+        function collapseEvent(idCollapse1, idCollapse2){
+            $(idCollapse1).collapse('hide');
+            $(idCollapse2).collapse('show');
+        }
+    </script>
     </body>
 </html>

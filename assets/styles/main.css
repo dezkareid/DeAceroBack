@@ -1,3 +1,13 @@
+/*CUSTOM CSS*/
+.panel, .input-group-addon, .form-control{
+  border-radius: 0px !important;
+}
+
+.panel-group .panel+.panel{
+  margin-top: 0px !important;
+}
+
+
 /* line 1, ../../../templates/assets/src/sass/_base.scss */
 html {
   height: 100%;
